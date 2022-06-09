@@ -163,21 +163,22 @@ st = 'as 23 fdfdg544'
 
 
 # 2)вывести на экран пустой квадрат из "*" сторона которого указана в переменой:
-# l = [n='*' for n in [i for i in range(0,11)]]
-# l=[]
-# b = []
-# for i in range(0,10):
-#     if i==0 or i==9:
-#         b.append('*')
-#     else:
-#         b.append(' ')
-#     l.append('*')
-#
-# b_s = ''.join(b)+'\n'
-#
-# print(f"{''.join(l)}\n{(b_s)*10}{''.join(l)}")
 
-# print(l,b)
+def func(n):
+    l = []
+    b = []
+    for i in range(n):
+        if i == 0 or i == n-1:
+            b.append('*')
+        else:
+            b.append(' ')
+        l.append('*')
+
+    b_s = ''.join(b) + '\n'
+
+    return f"{''.join(l)}\n{(b_s) * (n-2)}{''.join(l)}"
+
+print(func(12))
 
 
 
