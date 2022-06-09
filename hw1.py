@@ -22,14 +22,13 @@
 
 # st = 'as 23 fdfdg544 34'
 #
-# list = [s for s in st]
-# list2=[i for i in list if i.isdigit() or i == ' ']
-#
+# list2=[i for i in st if i.isdigit() or i == ' ']
+# print(list2)
+# #
 # notList = ((''.join(list2)).strip()).split()
 # n = ','.join(notList)
 # print(notList)
 # print(n)
-
 
 
 # list comprehension
@@ -50,3 +49,104 @@
 
 # l = [i**2 for i in range(0,51) if i%2!=0]
 # print(l)
+
+
+# function
+#
+# - створити функцію яка виводить ліст
+
+# def func ():
+#     l = []
+#     return l
+#
+# print(func())
+
+# - створити функцію яка приймає три числа та виводить та повертає найменьше.
+
+# def func(a, b, c):
+#     if b > a < c:
+#         return a
+#     elif a > b < c:
+#         return b
+#     elif a > c < b:
+#         return c
+
+# print(func(4, 10, 6))
+
+# - створити функцію яка приймає три числа та виводить та повертає найбільше.
+
+# def func(a, b, c):
+#     if b < a > c:
+#         return a
+#     elif a < b > c:
+#         return b
+#     elif a < c > b:
+#         return c
+#
+# print(func(11, 10, 20))
+
+# - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше
+
+# def func(*args):
+#     print(max(args))
+#     return min(args)
+#
+# print(func(11, 10, 20,25))
+
+# - створити функцію яка повертає найбільше число з ліста
+
+# l= [11, 45, 20,25, 30]
+# def func(l):
+#     return max(l)
+# print(func(l))
+
+# - створити функцію яка повертає найменьше число з ліста
+
+# l= [11, 45, 5,25, 30]
+# def func(l):
+#     return min(l)
+# print(func(l))
+
+# - створити функцію яка приймає ліст чисел та складає значення елементів ліста та повертає його.
+
+# l= [11, 45, 5,25, 30]
+# def func(l):
+#     return sum(l)
+# print(func(l))
+
+# - створити функцію яка приймає ліст чисел та повертає середнє арифметичне його значень.
+
+# l= [11, 45, 5,25, 30]
+# def func(l):
+#     return sum(l)/len(l)
+# print(func(l))
+
+# 1)Дан лист:
+#   list = [22, 3,5,2,8,2,-23, 8,23,5]
+#   - найти min число в листе
+#   - удалить все дубликаты в листе
+#   - заменить каждое четвертое значение на "Х"
+#       0   1 2 3 4 5  6   7  8 9
+list = [22, 3, 5, 2, 8, 2, -23, 8, 23, 5]
+# print(min(list))
+# print(set(list))
+
+n=4
+
+l = [[v if i!=3 and i%i!=4 else 'X' for i,v in enumerate(list)] for n in list]
+print(l)
+
+# for i, v in enumerate(list):
+#     if i == 3:
+#         v = 'X'
+#     elif
+
+# print(11%7)
+
+
+# 2)вывести на экран пустой квадрат из "*" сторона которого указана в переменой:
+
+
+
+# 3) вывести табличку умножения с помощью цикла while
+# 4) переделать первое задание под меню с помощью цикла
