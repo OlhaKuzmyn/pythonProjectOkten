@@ -3,16 +3,16 @@
 # st = 'as 23 fdfdg544' введена строка
 # 2,3,5,4,4        #вивело в консолі.
 
-# st = 'as 23 fdfdg544'
+st = 'as 23 fdfdg544'
 # # 1 way
 # ls = []
 # for s in st:
 #     if s.isdigit():
 #         ls.append(int(s))
 # print(ls)
-# # 2 way
-# l = [int(s) for s in st if s.isdigit()]
-# print(l)
+# 2 way
+# l = [s for s in st if s.isdigit()]
+# print(','.join(l))
 
 # 2)написати прогу яка вибирає зі введеної строки числа і виводить їх
 # так як вони написані
