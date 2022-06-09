@@ -127,26 +127,96 @@
 #   - удалить все дубликаты в листе
 #   - заменить каждое четвертое значение на "Х"
 #       0   1 2 3 4 5  6   7  8 9
-list = [22, 3, 5, 2, 8, 2, -23, 8, 23, 5]
-# print(min(list))
-# print(set(list))
+# list = [22, 3, 5, 2, 8, 2, -23, 8, 23, 5]
+# # print(min(list))
+# # print(set(list))
+#
+# list[::4] = ['X']*len(list[::4])
+# print(list)
 
-n=4
-
-l = [[v if i!=3 and i%i!=4 else 'X' for i,v in enumerate(list)] for n in list]
-print(l)
+# the rest to this task dont work
+# n=4
+# #
+# l = [[v if i!=3 and 0<i%i!=4 else 'X' for i,v in enumerate(list)] for n in list]
+# print(l)
 
 # for i, v in enumerate(list):
-#     if i == 3:
-#         v = 'X'
-#     elif
+#     if i==3:
+#         list[i] = 'X'
+#     elif i+4:
+#         list[i] = 'X'
+# if i%i==4:
+#     list[i]='X'
 
-# print(11%7)
+
+
+# n=3
+# ln = len(list)-1
+# # print(ln)
+# for i, v in enumerate(list):
+#     while i!=ln:
+#         if i==n:
+#             list[i] = 'x'
+#     n+=4
+#
+# print(list)
 
 
 # 2)вывести на экран пустой квадрат из "*" сторона которого указана в переменой:
+# l = [n='*' for n in [i for i in range(0,11)]]
+# l=[]
+# b = []
+# for i in range(0,10):
+#     if i==0 or i==9:
+#         b.append('*')
+#     else:
+#         b.append(' ')
+#     l.append('*')
+#
+# b_s = ''.join(b)+'\n'
+#
+# print(f"{''.join(l)}\n{(b_s)*10}{''.join(l)}")
+
+# print(l,b)
 
 
 
+
+
+
+
+
+
+
+# saw the soution online
 # 3) вывести табличку умножения с помощью цикла while
+
+
+# c=1
+# while c<10:
+#     print('')
+#     x = 1
+#     while x<10:
+#         print(c*x , end='\t')
+#         x+=1
+#     c+=1
+
+
+# y = 1
+# while y <= 12:
+#      print('')
+#      print(y,end='\t')
+#      z = 1
+#      while z <= 12:
+#           print(y*z ,end='\t')
+#           z += 1
+#      y += 1
+
+# for i in range(1,10):
+#     for j in range(1,10):
+#         print(i*j)
+
+
+
 # 4) переделать первое задание под меню с помощью цикла
+# ??
