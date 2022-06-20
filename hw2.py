@@ -254,3 +254,20 @@
 # [1, 3, 5, 7, 9, 11] => [[1], [3, 5], [7, 9, 11]]
 # [1, 3, 5, 7, 9]  => [ [1], [3,5], [7,9]]
 # [1, 3, 5, 7, 9, 11, 13]  => [[1], [3, 5], [7, 9, 11], [13]]
+#
+# l_odds = [i for i in range(20) if i%2!=0]
+# c = 1
+# lst=[]
+# while c<=4:
+#     for n in range(0, 20, c):
+#         if n%2!=0:
+#             lst.append([n])
+#     # print([[i for i in range(20) if i%2!=0] for n in range(0, 20, c)])
+#     c+=1
+#         # lst.append()
+# print(lst)
+# print(l_odds)
+
+i_list = range(0,84)
+r = 21
+res = [i_list[i:i+r] for i in range(0,len(i_list),r)]
