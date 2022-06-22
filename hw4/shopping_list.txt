@@ -1,0 +1,7 @@
+
+tomato 3
+avocado 5
+hat 15
+ice-cream 1
+shoes 25
+cucumber 2
